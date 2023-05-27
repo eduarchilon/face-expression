@@ -2,6 +2,7 @@
 {
     public class Image
     {
-        public IFormFile ImageFile { get; set; }
+        public IFormFile? ImageFile { get; set; }
+
     }
 }
