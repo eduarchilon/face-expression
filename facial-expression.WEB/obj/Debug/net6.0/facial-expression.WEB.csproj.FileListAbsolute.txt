@@ -29,9 +29,7 @@ C:\Users\Eduar\source\repos\facial-expression\facial-expression.WEB\obj\Debug\ne
 C:\Users\Eduar\source\repos\facial-expression\facial-expression.WEB\obj\Debug\net6.0\facial-expression.WEB.pdb
 C:\Users\Eduar\source\repos\facial-expression\facial-expression.WEB\obj\Debug\net6.0\facial-expression.WEB.genruntimeconfig.cache
 C:\Users\Eduar\source\repos\facial-expression\facial-expression.WEB\obj\Debug\net6.0\ref\facial-expression.WEB.dll
-C:\Users\Eduar\source\repos\facial-expression\facial-expression.WEB\obj\Debug\net6.0\facial-expression.WEB.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Eduar\source\repos\facial-expression\facial-expression.WEB\bin\Debug\net6.0\Google.Protobuf.dll
-C:\Users\Eduar\source\repos\facial-expression\facial-expression.WEB\bin\Debug\net6.0\Microsoft.Extensions.Configuration.UserSecrets.dll
 C:\Users\Eduar\source\repos\facial-expression\facial-expression.WEB\bin\Debug\net6.0\Microsoft.ML.Core.dll
 C:\Users\Eduar\source\repos\facial-expression\facial-expression.WEB\bin\Debug\net6.0\Microsoft.ML.Data.dll
 C:\Users\Eduar\source\repos\facial-expression\facial-expression.WEB\bin\Debug\net6.0\Microsoft.ML.KMeansClustering.dll
@@ -43,13 +41,9 @@ C:\Users\Eduar\source\repos\facial-expression\facial-expression.WEB\bin\Debug\ne
 C:\Users\Eduar\source\repos\facial-expression\facial-expression.WEB\bin\Debug\net6.0\Microsoft.ML.DataView.dll
 C:\Users\Eduar\source\repos\facial-expression\facial-expression.WEB\bin\Debug\net6.0\Microsoft.ML.TensorFlow.dll
 C:\Users\Eduar\source\repos\facial-expression\facial-expression.WEB\bin\Debug\net6.0\Microsoft.ML.Vision.dll
-C:\Users\Eduar\source\repos\facial-expression\facial-expression.WEB\bin\Debug\net6.0\Microsoft.OpenApi.dll
 C:\Users\Eduar\source\repos\facial-expression\facial-expression.WEB\bin\Debug\net6.0\Newtonsoft.Json.dll
 C:\Users\Eduar\source\repos\facial-expression\facial-expression.WEB\bin\Debug\net6.0\NumSharp.Lite.dll
 C:\Users\Eduar\source\repos\facial-expression\facial-expression.WEB\bin\Debug\net6.0\Protobuf.Text.dll
-C:\Users\Eduar\source\repos\facial-expression\facial-expression.WEB\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
-C:\Users\Eduar\source\repos\facial-expression\facial-expression.WEB\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-C:\Users\Eduar\source\repos\facial-expression\facial-expression.WEB\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\Eduar\source\repos\facial-expression\facial-expression.WEB\bin\Debug\net6.0\System.CodeDom.dll
 C:\Users\Eduar\source\repos\facial-expression\facial-expression.WEB\bin\Debug\net6.0\TensorFlow.NET.dll
 C:\Users\Eduar\source\repos\facial-expression\facial-expression.WEB\bin\Debug\net6.0\runtimes\linux-arm\native\libLdaNative.so

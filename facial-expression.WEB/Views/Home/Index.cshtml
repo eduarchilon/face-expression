@@ -1,17 +1,28 @@
-﻿@model Image
+﻿@Model Image
 
 @{
     ViewData["Title"] = "Home Page";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">Bienvenidos</h1>
+    <p>En ésta web usted podrá clasificar emociones faciales cargando imagenes</p>
 </div>
 
 <div class="container">
-    <form asp-action="procesarImagen" method="post" enctype="multipart/form-data">
-        <input type="file" name="imageFile" />
-        <input type="submit" value="Enviar" />
-    </form>
+    <div class="mb-3">
+        <form asp-action="procesarImagen" method="post" enctype="multipart/form-data">
+            <!--  <input type="file" name="imageFile" />
+              <input type="submit" value="Enviar" />
+                -->
+            <label for="formFileDisabled" class="form-label">Importe una imagen</label>
+            <input class="form-control" type="file" name="imageFile" />
+            <br />
+            <button type="submit" class="btn btn-secondary">Cargar</button>
+
+        </form>
+    </div>
 </div>
+
+
+<h1>Resultado de la predicción:</h1>
