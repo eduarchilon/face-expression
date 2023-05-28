@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Eduar\\source\\repos\\facial-expression\\facial-expression.WEB\\facial-expression.WEB.csproj": {}
+    "C:\\Users\\Usuario\\Source\\Repos\\face-expression\\facial-expression.WEB\\facial-expression.WEB.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Eduar\\source\\repos\\facial-expression\\facial-expression.WEB\\facial-expression.WEB.csproj": {
+    "C:\\Users\\Usuario\\Source\\Repos\\face-expression\\facial-expression.WEB\\facial-expression.WEB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Eduar\\source\\repos\\facial-expression\\facial-expression.WEB\\facial-expression.WEB.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Source\\Repos\\face-expression\\facial-expression.WEB\\facial-expression.WEB.csproj",
         "projectName": "facial-expression.WEB",
-        "projectPath": "C:\\Users\\Eduar\\source\\repos\\facial-expression\\facial-expression.WEB\\facial-expression.WEB.csproj",
-        "packagesPath": "C:\\Users\\Eduar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Eduar\\source\\repos\\facial-expression\\facial-expression.WEB\\obj\\",
+        "projectPath": "C:\\Users\\Usuario\\Source\\Repos\\face-expression\\facial-expression.WEB\\facial-expression.WEB.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Usuario\\Source\\Repos\\face-expression\\facial-expression.WEB\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Eduar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -72,7 +72,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -4,15 +4,16 @@ namespace facial_expression.WEB.Repository
 {
     public interface IImageRespository
     {
-        List<Image> GetAllImages();
+        List<Expresion> GetAllImages();
+
     }
 
     public class ImageRepository : IImageRespository
     {
 
-        private List<Image> _images;
+        private List<Expresion> _images;
 
-        public ImageRepository(List<Image> images) { 
+        public ImageRepository(List<Expresion> images) { 
             this._images = images;
         }
 
@@ -21,7 +22,7 @@ namespace facial_expression.WEB.Repository
             this._images.Clear();
         }
 
-        public List<Image> GetAllImages()
+        public List<Expresion> GetAllImages()
         {
             return null;
         }

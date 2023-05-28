@@ -38,7 +38,7 @@ public class HomeController : Controller
     }
 
     [HttpPost]
-    public IActionResult procesarImagen(Image model)
+    public IActionResult procesarImagen(Expresion model)
     {
         if (model.ImageFile != null && model.ImageFile.Length > 0)
         {
@@ -62,6 +62,8 @@ public class HomeController : Controller
             //Load model and predict output
             var result = MLModel.Predict(sampleData);
 
+            ViewBag.Respuesta = result.PredictedLabel;
+
             Console.WriteLine("Respuesta:" + result.PredictedLabel);
 
             bool saved = false;
@@ -80,7 +82,7 @@ public class HomeController : Controller
             }
 
             // Ejemplo: Redirigir a una vista de éxito
-            return RedirectToAction("Index");
+            return View("Index");
         }
 
         // Si no se envió una imagen válida, puedes redirigir a una vista de error o mostrar un mensaje de validación en el formulario.

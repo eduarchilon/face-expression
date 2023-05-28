@@ -16,7 +16,8 @@
               <input type="submit" value="Enviar" />
                 -->
             <label for="formFileDisabled" class="form-label">Importe una imagen</label>
-            <input class="form-control" type="file" name="imageFile" />
+            <input class="form-control" type="file" name="imageFile" onchange="previewImage(event)" />
+
             <br />
             <button type="submit" class="btn btn-secondary">Cargar</button>
 
@@ -24,5 +25,79 @@
     </div>
 </div>
 
+<img id="previewImage" src="#" alt="Vista previa de la imagen" />
+
+
 
 <h1>Resultado de la predicción:</h1>
+<h2>@ViewBag.Respuesta</h2>
+
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm">
+            <button onclick="startCamera()">Start Camera</button>
+        </div>
+        <div class="col-sm">
+            <button onclick="snap()">Capture</button>
+        </div>
+    </div>
+    <div class="row" style="margin-top:10px">
+        <div class="video-wrap col-sm">
+            <video id="video" playsinline autoplay></video>
+        </div>
+        <div class="col-sm">
+            <canvas id="capturedImage" width="400" height="240"></canvas>
+            <p class="display-4" id="displayText"></p>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        function previewImage(event) {
+            var input = event.target;
+            var reader = new FileReader();
+
+            reader.onload = function () {
+                var previewImage = document.getElementById('previewImage');
+                previewImage.src = reader.result;
+            }
+
+            if (input.files && input.files[0]) {
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+
+
+        function startCamera() {
+            if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+                navigator.mediaDevices.getUserMedia({ video: true })
+                    .then(function (stream) {
+                        var videoElement = document.getElementById("video");
+                        videoElement.srcObject = stream;
+                    })
+                    .catch(function (error) {
+                        console.error("Error accessing camera:", error);
+                    });
+            }
+        }
+
+        function snap() {
+            var videoElement = document.getElementById("video");
+            var canvasElement = document.getElementById("capturedImage");
+            var displayTextElement = document.getElementById("displayText");
+
+            var context = canvasElement.getContext("2d");
+            context.drawImage(videoElement, 0, 0, canvasElement.width, canvasElement.height);
+
+            // Perform any additional image processing or capture logic here
+
+            // Example prediction result
+            var prediction = "Topwear";
+            displayTextElement.innerText = "Item: " + prediction;
+        }
+    </script>
+}
