@@ -1,4 +1,5 @@
-﻿using facial_expression.WEB.Models;
+﻿using facial_expression.WEB.Data;
+using facial_expression.WEB.Models;
 using Facial_expression_WEB;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
@@ -9,10 +10,12 @@ public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
     private static int count = 0;
+    private readonly ApplicationDbContext _db;
 
-    public HomeController(ILogger<HomeController> logger)
+    public HomeController(ILogger<HomeController> logger, ApplicationDbContext db)
     {
         _logger = logger;
+        _db = db;
     }
 
     public IActionResult Index()
@@ -38,6 +41,7 @@ public class HomeController : Controller
     }
 
     [HttpPost]
+    [ValidateAntiForgeryToken]
     public IActionResult procesarImagen(Expresion model)
     {
         if (model.ImageFile != null && model.ImageFile.Length > 0)
@@ -62,6 +66,8 @@ public class HomeController : Controller
             //Load model and predict output
             var result = MLModel.Predict(sampleData);
 
+            model.clasificacion = result.PredictedLabel;
+           
             ViewBag.Respuesta = result.PredictedLabel;
 
             Console.WriteLine("Respuesta:" + result.PredictedLabel);
@@ -76,10 +82,15 @@ public class HomeController : Controller
                 else
                 {
                     System.IO.File.Move($"images/{model.ImageFile.Name}.jpg", $"images/{result.PredictedLabel + count}.jpg");
-                    count++;
+                    model.nombreImagen = $"{result.PredictedLabel + count}.jpg";
+                   count++;
                     saved = true;
                 }
+
             }
+
+            _db.Expression.Add(model);
+            _db.SaveChanges();
 
             // Ejemplo: Redirigir a una vista de éxito
             return View("Index");
