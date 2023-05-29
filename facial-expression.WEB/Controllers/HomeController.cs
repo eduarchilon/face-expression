@@ -42,7 +42,7 @@ public class HomeController : Controller
 
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public IActionResult procesarImagen(Expresion model)
+    public IActionResult Index(Expresion model)
     {
         if (model.ImageFile != null && model.ImageFile.Length > 0)
         {
