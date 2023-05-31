@@ -1,0 +1,106 @@
+﻿@{
+    ViewData["Title"] = "Camara";
+}
+
+<div class="container">
+    <div class="mb-3">
+        <form id="formulario" asp-action="Camara" method="post" enctype="multipart/form-data">
+            <input id="miInputFile" class="form-control d-none" type="file" name="imageFile" onchange="previewImage(event)" />
+        </form>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm">
+            <button onclick="startCamera()">Iniciar camara</button>
+        </div>
+        <div class="col-sm">
+            <button onclick="snap()">Capturar</button>
+        </div>
+    </div>
+    <div class="row" style="margin-top:10px">
+        <div class="video-wrap col-sm">
+            <video height="240" id="video" playsinline autoplay></video>
+        </div>
+        <div class="col-sm">
+            <canvas id="capturedImage" height="240" style="object-fit:cover"></canvas>
+            <p class="display-4" id="displayText"></p>
+        </div>
+    </div>
+</div>
+
+<h1>Resultado de la predicción:</h1>
+<h2>@ViewBag.Respuesta</h2>
+
+@section Scripts {
+    <script>
+        function previewImage(event) {
+            var input = event.target;
+            var reader = new FileReader();
+
+            reader.onload = function () {
+                var previewImage = document.getElementById('previewImage');
+                previewImage.src = reader.result;
+                previewImage.style.display = 'block';
+            }
+
+            if (input.files && input.files[0]) {
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+
+
+        function startCamera() {
+            if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+                navigator.mediaDevices.getUserMedia({ video: true })
+                    .then(function (stream) {
+                        var videoElement = document.getElementById("video");
+                        videoElement.srcObject = stream;
+                    })
+                    .catch(function (error) {
+                        console.error("Error accessing camera:", error);
+                    });
+            }
+        }
+
+        function snap() {
+            var videoElement = document.getElementById("video");
+            var canvasElement = document.getElementById("capturedImage");
+            var displayTextElement = document.getElementById("displayText");
+
+            var context = canvasElement.getContext("2d");
+            context.drawImage(videoElement, 0, 0, canvasElement.width, canvasElement.height);
+
+            // Perform any additional image processing or capture logic here
+
+            // Example prediction result
+            var prediction = "Topwear";
+            displayTextElement.innerText = "Item: " + prediction;
+
+            var canvasElement = document.getElementById('capturedImage');
+
+            canvasElement.toBlob(function (blob) {
+                // Aquí puedes trabajar con el objeto Blob de la imagen
+                // y adjuntarlo al formulario
+                var inputFile = document.getElementById('miInputFile');
+                var file = new File([blob], 'imagen.jpg', { type: 'image/jpg' });
+
+                function FileListItems(files) {
+                    var b = new ClipboardEvent("").clipboardData || new DataTransfer()
+                    for (var i = 0, len = files.length; i < len; i++) b.items.add(files[i])
+                    return b.files
+                }
+
+                var files = [];
+                files.push(file)
+
+                inputFile.files = FileListItems(files);
+                var formElement = document.getElementById('formulario');
+                formElement.submit();
+            }, 'image/jpg');
+
+        }
+    </script>
+}

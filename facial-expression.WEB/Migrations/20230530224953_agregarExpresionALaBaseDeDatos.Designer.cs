@@ -11,7 +11,7 @@ using facial_expression.WEB.Data;
 namespace facial_expression.WEB.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230529000302_agregarExpresionALaBaseDeDatos")]
+    [Migration("20230530224953_agregarExpresionALaBaseDeDatos")]
     partial class agregarExpresionALaBaseDeDatos
     {
         /// <inheritdoc />

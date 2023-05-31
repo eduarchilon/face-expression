@@ -4,7 +4,7 @@
   "DataSource": {
     "Type": "Folder",
     "Version": 1,
-    "FolderPath": "C:\\Users\\Eduar\\source\\repos\\facial-expression\\facial-expression-images"
+    "FolderPath": "C:\\Users\\Usuario\\source\\repos\\face-expression\\facial-expression-images"
   },
   "Environment": {
     "Type": "LocalCPU",

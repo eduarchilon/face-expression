@@ -92,7 +92,6 @@ public class HomeController : Controller
             _db.Expression.Add(model);
             _db.SaveChanges();
 
-            // Ejemplo: Redirigir a una vista de éxito
             return View("Index");
         }
 
