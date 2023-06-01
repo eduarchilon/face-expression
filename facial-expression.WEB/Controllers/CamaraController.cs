@@ -23,7 +23,7 @@ namespace facial_expression.WEB.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Camara(Expresion model)
+        public String Camara(Expresion model)
         {
             if (model.ImageFile != null && model.ImageFile.Length > 0)
             {
@@ -49,7 +49,7 @@ namespace facial_expression.WEB.Controllers
 
                 model.clasificacion = result.PredictedLabel;
 
-                ViewBag.Respuesta = result.PredictedLabel;
+                //ViewBag.Respuesta = result.PredictedLabel;
 
                 Console.WriteLine("Respuesta:" + result.PredictedLabel);
 
@@ -73,14 +73,14 @@ namespace facial_expression.WEB.Controllers
                 _db.Expression.Add(model);
                 _db.SaveChanges();
 
-                return View("Camara");
+                return result.PredictedLabel;
             }
 
             // Si no se envió una imagen válida, puedes redirigir a una vista de error o mostrar un mensaje de validación en el formulario.
             ModelState.AddModelError("ImageFile", "Por favor, seleccione una imagen.");
 
             // Vuelve a mostrar el formulario de carga de imágenes con el mensaje de error
-            return View("Camara", model);
+            return null;
         }
     }
 }

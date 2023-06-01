@@ -67,8 +67,6 @@ public class HomeController : Controller
             var result = MLModel.Predict(sampleData);
 
             model.clasificacion = result.PredictedLabel;
-           
-            ViewBag.Respuesta = result.PredictedLabel;
 
             Console.WriteLine("Respuesta:" + result.PredictedLabel);
 

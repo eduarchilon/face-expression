@@ -8352,19 +8352,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Usuario\\.nuget\\packages\\": {}
+    "C:\\Users\\juanch\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\Source\\Repos\\face-expression\\facial-expression.WEB\\facial-expression.WEB.csproj",
+      "projectUniqueName": "C:\\Users\\juanch\\source\\repos\\face-expression\\facial-expression.WEB\\facial-expression.WEB.csproj",
       "projectName": "facial-expression.WEB",
-      "projectPath": "C:\\Users\\Usuario\\Source\\Repos\\face-expression\\facial-expression.WEB\\facial-expression.WEB.csproj",
-      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\Source\\Repos\\face-expression\\facial-expression.WEB\\obj\\",
+      "projectPath": "C:\\Users\\juanch\\source\\repos\\face-expression\\facial-expression.WEB\\facial-expression.WEB.csproj",
+      "packagesPath": "C:\\Users\\juanch\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\juanch\\source\\repos\\face-expression\\facial-expression.WEB\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\juanch\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8372,6 +8372,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "c:\\program files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -8436,7 +8437,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "c:\\program files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }
