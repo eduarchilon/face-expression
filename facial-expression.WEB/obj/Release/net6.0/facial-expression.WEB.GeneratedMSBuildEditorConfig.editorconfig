@@ -16,12 +16,20 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Eduar\source\repos\facial-expression\facial-expression.WEB
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Eduar/source/repos/facial-expression/facial-expression.WEB/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[C:/Users/Eduar/source/repos/facial-expression/facial-expression.WEB/Views/Camara/Camara.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FtYXJhXENhbWFyYS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Eduar/source/repos/facial-expression/facial-expression.WEB/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[C:/Users/Eduar/source/repos/facial-expression/facial-expression.WEB/Views/Imagen/Historial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1hZ2VuXEhpc3RvcmlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Eduar/source/repos/facial-expression/facial-expression.WEB/Views/Imagen/Imagen.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1hZ2VuXEltYWdlbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Eduar/source/repos/facial-expression/facial-expression.WEB/Views/Imagen/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1hZ2VuXFByaXZhY3kuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Eduar/source/repos/facial-expression/facial-expression.WEB/Views/Shared/Error.cshtml]
