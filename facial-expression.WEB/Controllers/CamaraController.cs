@@ -31,14 +31,14 @@ namespace facial_expression.WEB.Controllers
                 // model.ImageFile contiene la imagen enviada
 
                 // Ejemplo: Guardar la imagen en una ubicación específica
-                var imagePath = $"images/{model.ImageFile.Name}.jpg";
+                var imagePath = $"wwwroot/images/{model.ImageFile.Name}.jpg";
                 using (var stream = new FileStream(imagePath, FileMode.Create))
                 {
                     model.ImageFile.CopyTo(stream);
                 }
 
                 //Load sample data
-                var imageBytes = System.IO.File.ReadAllBytes(@$"images/{model.ImageFile.Name}.jpg");
+                var imageBytes = System.IO.File.ReadAllBytes(@$"wwwroot/images/{model.ImageFile.Name}.jpg");
                 MLModel.ModelInput sampleData = new MLModel.ModelInput()
                 {
                     ImageSource = imageBytes,
@@ -56,13 +56,13 @@ namespace facial_expression.WEB.Controllers
                 bool saved = false;
                 while (!saved)
                 {
-                    if (System.IO.File.Exists($"images/{result.PredictedLabel + count}.jpg"))
+                    if (System.IO.File.Exists($"wwwroot/images/{result.PredictedLabel + count}.jpg"))
                     {
                         count++;
                     }
                     else
                     {
-                        System.IO.File.Move($"images/{model.ImageFile.Name}.jpg", $"images/{result.PredictedLabel + count}.jpg");
+                        System.IO.File.Move($"wwwroot/images/{model.ImageFile.Name}.jpg", $"wwwroot/images/{result.PredictedLabel + count}.jpg");
                         model.nombreImagen = $"{result.PredictedLabel + count}.jpg";
                         count++;
                         saved = true;

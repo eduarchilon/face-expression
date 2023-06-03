@@ -2,47 +2,39 @@
     ViewData["Title"] = "Camara";
 }
 
-<div class="container">
-    <div class="mb-3">
-        <form id="formulario" method="post" enctype="multipart/form-data">
-            <input id="miInputFile" class="form-control d-none" type="file" name="imageFile" onchange="previewImage(event)" />
-        </form>
+<div class="mb-3">
+    <form id="formulario" method="post" enctype="multipart/form-data">
+        <input id="miInputFile" class="form-control d-none" type="file" name="imageFile" onchange="previewImage(event)" />
+    </form>
+</div>
+<div class="row mb-2">
+    <div class="col-sm" style="padding: 0">
+        <button class="btn btn-success" onclick="startCamera()">Iniciar camara</button>
+    </div>
+    <div class="col-sm" style="padding: 0;">
+        <button type="button" class="btn btn-success"onclick="snap()">Capturar</button>
     </div>
 </div>
-
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-sm">
-            <button onclick="startCamera()">Iniciar camara</button>
-        </div>
-        <div class="col-sm">
-            <button type="button" onclick="snap()">Capturar</button>
-        </div>
+<div class="row" style="padding: 0;">
+    <div class="video-wrap col-sm" style="padding: 0;">
+        <video id="video" width="640" height="480" playsinline autoplay></video>
     </div>
-    <div class="row" style="margin-top:10px">
-        <div class="video-wrap col-sm">
-            <video height="240" id="video" playsinline autoplay></video>
-        </div>
-        <div class="col-sm">
-            <canvas id="capturedImage" height="240" style="object-fit:cover"></canvas>
-            <p class="display-4" id="displayText"></p>
-        </div>
+    <div class="col-sm" style="padding: 0;">
+        <canvas id="capturedImage" width="640" height="480" style="object-fit: cover;"></canvas>
+        <h2 id="prediccion" style="display: none;">Predicción: <span id="resultado"></span></h2>
     </div>
 </div>
-
-<h1 style="display: inline;">Resultado de la predicción: </h1>
-<h2 id="resultado" style="display: inline;"></h2>
 
 @section Scripts {
     <script>
         function sendForm() {
             var count = 3;
-            $('#resultado').html('Cargando...');
+            $('#resultado').html('cargando...');
             const interval = setInterval(frame, 500);
             function frame() {
                 if (count++ !== 3) $('#resultado').append('.');
                 else {
-                    $('#resultado').html('Cargando');
+                    $('#resultado').html('cargando');
                     count = 0;
                 }
             }
@@ -93,17 +85,12 @@
         function snap() {
             var videoElement = document.getElementById("video");
             var canvasElement = document.getElementById("capturedImage");
-            var displayTextElement = document.getElementById("displayText");
+            var prediccion = document.getElementById('prediccion');
 
             var context = canvasElement.getContext("2d");
             context.drawImage(videoElement, 0, 0, canvasElement.width, canvasElement.height);
 
             // Perform any additional image processing or capture logic here
-
-            // Example prediction result
-            var prediction = "Topwear";
-            displayTextElement.innerText = "Item: " + prediction;
-
             var canvasElement = document.getElementById('capturedImage');
 
             canvasElement.toBlob(function (blob) {
@@ -122,6 +109,7 @@
                 files.push(file)
 
                 inputFile.files = FileListItems(files);
+                prediccion.style.display = 'block';
                 sendForm();
             }, 'image/jpg');
 

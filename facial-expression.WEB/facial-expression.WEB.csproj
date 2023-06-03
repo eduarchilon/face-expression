@@ -6,7 +6,8 @@
     <RootNamespace>facial_expression.WEB</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <Folder Include="images\" />
+    <Folder Include="wwwroot\images\" />
+    <Folder Include="Migrations\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.5" />
@@ -30,5 +31,42 @@
       <DependentUpon>MLModel.mbconfig</DependentUpon>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="wwwroot\images\contempt0.jpg" />
+    <None Include="wwwroot\images\contempt1.jpg" />
+    <None Include="wwwroot\images\contempt13.jpg" />
+    <None Include="wwwroot\images\contempt16.jpg" />
+    <None Include="wwwroot\images\contempt2.jpg" />
+    <None Include="wwwroot\images\contempt3.jpg" />
+    <None Include="wwwroot\images\contempt4.jpg" />
+    <None Include="wwwroot\images\contempt5.jpg" />
+    <None Include="wwwroot\images\happy0.jpg" />
+    <None Include="wwwroot\images\happy1.jpg" />
+    <None Include="wwwroot\images\happy10.jpg" />
+    <None Include="wwwroot\images\happy11.jpg" />
+    <None Include="wwwroot\images\happy12.jpg" />
+    <None Include="wwwroot\images\happy13.jpg" />
+    <None Include="wwwroot\images\happy14.jpg" />
+    <None Include="wwwroot\images\happy15.jpg" />
+    <None Include="wwwroot\images\happy19.jpg" />
+    <None Include="wwwroot\images\happy2.jpg" />
+    <None Include="wwwroot\images\happy22.jpg" />
+    <None Include="wwwroot\images\happy23.jpg" />
+    <None Include="wwwroot\images\happy3.jpg" />
+    <None Include="wwwroot\images\happy4.jpg" />
+    <None Include="wwwroot\images\happy5.jpg" />
+    <None Include="wwwroot\images\happy6.jpg" />
+    <None Include="wwwroot\images\happy7.jpg" />
+    <None Include="wwwroot\images\happy8.jpg" />
+    <None Include="wwwroot\images\happy9.jpg" />
+    <None Include="wwwroot\images\neutral14.jpg" />
+    <None Include="wwwroot\images\neutral15.jpg" />
+    <None Include="wwwroot\images\neutral16.jpg" />
+    <None Include="wwwroot\images\neutral17.jpg" />
+    <None Include="wwwroot\images\neutral2.jpg" />
+    <None Include="wwwroot\images\neutral3.jpg" />
+    <None Include="wwwroot\images\neutral4.jpg" />
+    <None Include="wwwroot\images\neutral5.jpg" />
+    <None Include="wwwroot\images\neutral8.jpg" />
+    <None Include="wwwroot\images\sad4.jpg" />
   </ItemGroup>
 </Project>

@@ -6,19 +6,19 @@ using System.Diagnostics;
 
 namespace facial_expression.WEB.Controllers;
 
-public class HomeController : Controller
+public class ImagenController : Controller
 {
-    private readonly ILogger<HomeController> _logger;
+    private readonly ILogger<ImagenController> _logger;
     private static int count = 0;
     private readonly ApplicationDbContext _db;
 
-    public HomeController(ILogger<HomeController> logger, ApplicationDbContext db)
+    public ImagenController(ILogger<ImagenController> logger, ApplicationDbContext db)
     {
         _logger = logger;
         _db = db;
     }
 
-    public IActionResult Index()
+    public IActionResult Imagen()
     {
         return View();
     }
@@ -34,15 +34,9 @@ public class HomeController : Controller
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
 
-
-    public IActionResult procesarImagen()
-    {
-        return View();
-    }
-
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public IActionResult Index(Expresion model)
+    public IActionResult Imagen(Expresion model)
     {
         if (model.ImageFile != null && model.ImageFile.Length > 0)
         {
@@ -90,13 +84,19 @@ public class HomeController : Controller
             _db.Expression.Add(model);
             _db.SaveChanges();
 
-            return View("Index");
+            return View();
         }
 
         // Si no se envió una imagen válida, puedes redirigir a una vista de error o mostrar un mensaje de validación en el formulario.
         ModelState.AddModelError("ImageFile", "Por favor, seleccione una imagen.");
 
         // Vuelve a mostrar el formulario de carga de imágenes con el mensaje de error
-        return View("Index", model);
+        return View(model);
+    }
+
+    public IActionResult Historial()
+    {
+        var model = _db.Set<Expresion>().ToList();
+        return View(model);
     }
 }

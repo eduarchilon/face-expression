@@ -13,6 +13,146 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\juanch\\source\\repos\\face-expression\\facial-expression.WEB\\wwwroot\\images\\contempt0.jpg",
+      "PackagePath": "staticwebassets\\images\\contempt0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\juanch\\source\\repos\\face-expression\\facial-expression.WEB\\wwwroot\\images\\contempt1.jpg",
+      "PackagePath": "staticwebassets\\images\\contempt1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\juanch\\source\\repos\\face-expression\\facial-expression.WEB\\wwwroot\\images\\contempt13.jpg",
+      "PackagePath": "staticwebassets\\images\\contempt13.jpg"
+    },
+    {
+      "Id": "C:\\Users\\juanch\\source\\repos\\face-expression\\facial-expression.WEB\\wwwroot\\images\\contempt16.jpg",
+      "PackagePath": "staticwebassets\\images\\contempt16.jpg"
+    },
+    {
+      "Id": "C:\\Users\\juanch\\source\\repos\\face-expression\\facial-expression.WEB\\wwwroot\\images\\contempt2.jpg",
+      "PackagePath": "staticwebassets\\images\\contempt2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\juanch\\source\\repos\\face-expression\\facial-expression.WEB\\wwwroot\\images\\contempt5.jpg",
+      "PackagePath": "staticwebassets\\images\\contempt5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\juanch\\source\\repos\\face-expression\\facial-expression.WEB\\wwwroot\\images\\happy0.jpg",
+      "PackagePath": "staticwebassets\\images\\happy0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\juanch\\source\\repos\\face-expression\\facial-expression.WEB\\wwwroot\\images\\happy1.jpg",
+      "PackagePath": "staticwebassets\\images\\happy1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\juanch\\source\\repos\\face-expression\\facial-expression.WEB\\wwwroot\\images\\happy10.jpg",
+      "PackagePath": "staticwebassets\\images\\happy10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\juanch\\source\\repos\\face-expression\\facial-expression.WEB\\wwwroot\\images\\happy11.jpg",
+      "PackagePath": "staticwebassets\\images\\happy11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\juanch\\source\\repos\\face-expression\\facial-expression.WEB\\wwwroot\\images\\happy12.jpg",
+      "PackagePath": "staticwebassets\\images\\happy12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\juanch\\source\\repos\\face-expression\\facial-expression.WEB\\wwwroot\\images\\happy13.jpg",
+      "PackagePath": "staticwebassets\\images\\happy13.jpg"
+    },
+    {
+      "Id": "C:\\Users\\juanch\\source\\repos\\face-expression\\facial-expression.WEB\\wwwroot\\images\\happy14.jpg",
+      "PackagePath": "staticwebassets\\images\\happy14.jpg"
+    },
+    {
+      "Id": "C:\\Users\\juanch\\source\\repos\\face-expression\\facial-expression.WEB\\wwwroot\\images\\happy15.jpg",
+      "PackagePath": "staticwebassets\\images\\happy15.jpg"
+    },
+    {
+      "Id": "C:\\Users\\juanch\\source\\repos\\face-expression\\facial-expression.WEB\\wwwroot\\images\\happy19.jpg",
+      "PackagePath": "staticwebassets\\images\\happy19.jpg"
+    },
+    {
+      "Id": "C:\\Users\\juanch\\source\\repos\\face-expression\\facial-expression.WEB\\wwwroot\\images\\happy2.jpg",
+      "PackagePath": "staticwebassets\\images\\happy2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\juanch\\source\\repos\\face-expression\\facial-expression.WEB\\wwwroot\\images\\happy22.jpg",
+      "PackagePath": "staticwebassets\\images\\happy22.jpg"
+    },
+    {
+      "Id": "C:\\Users\\juanch\\source\\repos\\face-expression\\facial-expression.WEB\\wwwroot\\images\\happy23.jpg",
+      "PackagePath": "staticwebassets\\images\\happy23.jpg"
+    },
+    {
+      "Id": "C:\\Users\\juanch\\source\\repos\\face-expression\\facial-expression.WEB\\wwwroot\\images\\happy3.jpg",
+      "PackagePath": "staticwebassets\\images\\happy3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\juanch\\source\\repos\\face-expression\\facial-expression.WEB\\wwwroot\\images\\happy4.jpg",
+      "PackagePath": "staticwebassets\\images\\happy4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\juanch\\source\\repos\\face-expression\\facial-expression.WEB\\wwwroot\\images\\happy5.jpg",
+      "PackagePath": "staticwebassets\\images\\happy5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\juanch\\source\\repos\\face-expression\\facial-expression.WEB\\wwwroot\\images\\happy6.jpg",
+      "PackagePath": "staticwebassets\\images\\happy6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\juanch\\source\\repos\\face-expression\\facial-expression.WEB\\wwwroot\\images\\happy7.jpg",
+      "PackagePath": "staticwebassets\\images\\happy7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\juanch\\source\\repos\\face-expression\\facial-expression.WEB\\wwwroot\\images\\happy8.jpg",
+      "PackagePath": "staticwebassets\\images\\happy8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\juanch\\source\\repos\\face-expression\\facial-expression.WEB\\wwwroot\\images\\happy9.jpg",
+      "PackagePath": "staticwebassets\\images\\happy9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\juanch\\source\\repos\\face-expression\\facial-expression.WEB\\wwwroot\\images\\neutral14.jpg",
+      "PackagePath": "staticwebassets\\images\\neutral14.jpg"
+    },
+    {
+      "Id": "C:\\Users\\juanch\\source\\repos\\face-expression\\facial-expression.WEB\\wwwroot\\images\\neutral15.jpg",
+      "PackagePath": "staticwebassets\\images\\neutral15.jpg"
+    },
+    {
+      "Id": "C:\\Users\\juanch\\source\\repos\\face-expression\\facial-expression.WEB\\wwwroot\\images\\neutral16.jpg",
+      "PackagePath": "staticwebassets\\images\\neutral16.jpg"
+    },
+    {
+      "Id": "C:\\Users\\juanch\\source\\repos\\face-expression\\facial-expression.WEB\\wwwroot\\images\\neutral17.jpg",
+      "PackagePath": "staticwebassets\\images\\neutral17.jpg"
+    },
+    {
+      "Id": "C:\\Users\\juanch\\source\\repos\\face-expression\\facial-expression.WEB\\wwwroot\\images\\neutral2.jpg",
+      "PackagePath": "staticwebassets\\images\\neutral2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\juanch\\source\\repos\\face-expression\\facial-expression.WEB\\wwwroot\\images\\neutral3.jpg",
+      "PackagePath": "staticwebassets\\images\\neutral3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\juanch\\source\\repos\\face-expression\\facial-expression.WEB\\wwwroot\\images\\neutral4.jpg",
+      "PackagePath": "staticwebassets\\images\\neutral4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\juanch\\source\\repos\\face-expression\\facial-expression.WEB\\wwwroot\\images\\neutral5.jpg",
+      "PackagePath": "staticwebassets\\images\\neutral5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\juanch\\source\\repos\\face-expression\\facial-expression.WEB\\wwwroot\\images\\neutral8.jpg",
+      "PackagePath": "staticwebassets\\images\\neutral8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\juanch\\source\\repos\\face-expression\\facial-expression.WEB\\wwwroot\\images\\sad4.jpg",
+      "PackagePath": "staticwebassets\\images\\sad4.jpg"
+    },
+    {
       "Id": "C:\\Users\\juanch\\source\\repos\\face-expression\\facial-expression.WEB\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
