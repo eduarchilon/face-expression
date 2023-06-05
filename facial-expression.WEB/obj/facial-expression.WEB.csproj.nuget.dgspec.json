@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\juanch\\source\\repos\\face-expression\\facial-expression.WEB\\facial-expression.WEB.csproj": {}
+    "C:\\Users\\Eduar\\source\\repos\\face-expression\\facial-expression.WEB\\facial-expression.WEB.csproj": {}
   },
   "projects": {
-    "C:\\Users\\juanch\\source\\repos\\face-expression\\facial-expression.WEB\\facial-expression.WEB.csproj": {
+    "C:\\Users\\Eduar\\source\\repos\\face-expression\\facial-expression.WEB\\facial-expression.WEB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\juanch\\source\\repos\\face-expression\\facial-expression.WEB\\facial-expression.WEB.csproj",
+        "projectUniqueName": "C:\\Users\\Eduar\\source\\repos\\face-expression\\facial-expression.WEB\\facial-expression.WEB.csproj",
         "projectName": "facial-expression.WEB",
-        "projectPath": "C:\\Users\\juanch\\source\\repos\\face-expression\\facial-expression.WEB\\facial-expression.WEB.csproj",
-        "packagesPath": "C:\\Users\\juanch\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\juanch\\source\\repos\\face-expression\\facial-expression.WEB\\obj\\",
+        "projectPath": "C:\\Users\\Eduar\\source\\repos\\face-expression\\facial-expression.WEB\\facial-expression.WEB.csproj",
+        "packagesPath": "C:\\Users\\Eduar\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Eduar\\source\\repos\\face-expression\\facial-expression.WEB\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\juanch\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Eduar\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "c:\\program files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -87,7 +86,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "c:\\program files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }
