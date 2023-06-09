@@ -18,8 +18,8 @@
         "Version": 0,
         "Type": "Trial",
         "TrainerName": "DNN + ResNet50",
-        "Score": 0.36363636363636365,
-        "RuntimeInSeconds": 44.549999237060547
+        "Score": 0.30100334448160537,
+        "RuntimeInSeconds": 362.37200927734375
       }
     ],
     "Pipeline": {
