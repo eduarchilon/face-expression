@@ -28,6 +28,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Imagen}/{action=Imagen}/{id?}");
+    pattern: "{controller=Retro}/{action=Retro}/{id?}");
 
 app.Run();

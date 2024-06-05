@@ -4,7 +4,7 @@
   "DataSource": {
     "Type": "Folder",
     "Version": 1,
-    "FolderPath": "C:\\Users\\Eduar\\Desktop\\facil-expression-images"
+    "FolderPath": "C:\\Users\\Usuario\\source\\repos\\face-expression\\facil-expression-images\\facil-expression-images"
   },
   "Environment": {
     "Type": "LocalCPU",
@@ -18,8 +18,8 @@
         "Version": 0,
         "Type": "Trial",
         "TrainerName": "DNN + ResNet50",
-        "Score": 0.30100334448160537,
-        "RuntimeInSeconds": 362.37200927734375
+        "Score": 0.5625,
+        "RuntimeInSeconds": 482.010009765625
       }
     ],
     "Pipeline": {

@@ -7,15 +7,14 @@ namespace facial_expression.WEB.Controllers
 {
     public class CamaraController : Controller
     {
+        private readonly ApplicationDbContext _db;
         private readonly ILogger<CamaraController> _logger;
         private static int count = 0;
-        private readonly ApplicationDbContext _db;
-
-        public CamaraController(ILogger<CamaraController> logger, ApplicationDbContext db)
+        public CamaraController(ApplicationDbContext db)
         {
-            _logger = logger;
             _db = db;
         }
+
         public IActionResult Camara()
         {
             return View();
@@ -23,7 +22,7 @@ namespace facial_expression.WEB.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public String Camara(Expresion model)
+        public IActionResult Camara(Expresion model)
         {
             if (model.ImageFile != null && model.ImageFile.Length > 0)
             {
@@ -73,7 +72,8 @@ namespace facial_expression.WEB.Controllers
                 _db.Expression.Add(model);
                 _db.SaveChanges();
 
-                return result.PredictedLabel;
+                // Devuelve la predicción obtenida
+                return Content(result.PredictedLabel);
             }
 
             // Si no se envió una imagen válida, puedes redirigir a una vista de error o mostrar un mensaje de validación en el formulario.

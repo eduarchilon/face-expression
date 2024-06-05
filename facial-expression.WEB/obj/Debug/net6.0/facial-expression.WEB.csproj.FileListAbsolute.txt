@@ -123,7 +123,6 @@ C:\Users\juanch\source\repos\face-expression\facial-expression.WEB\obj\Debug\net
 C:\Users\juanch\source\repos\face-expression\facial-expression.WEB\obj\Debug\net6.0\facial-expression.WEB.genruntimeconfig.cache
 C:\Users\juanch\source\repos\face-expression\facial-expression.WEB\obj\Debug\net6.0\ref\facial-expression.WEB.dll
 C:\Users\Usuario\Source\Repos\face-expression\facial-expression.WEB\bin\Debug\net6.0\appsettings.Development.json
-C:\Users\Usuario\Source\Repos\face-expression\facial-expression.WEB\bin\Debug\net6.0\appsettings.json
 C:\Users\Usuario\Source\Repos\face-expression\facial-expression.WEB\bin\Debug\net6.0\facial-expression.WEB.staticwebassets.runtime.json
 C:\Users\Usuario\Source\Repos\face-expression\facial-expression.WEB\bin\Debug\net6.0\MLModel.zip
 C:\Users\Usuario\Source\Repos\face-expression\facial-expression.WEB\bin\Debug\net6.0\facial-expression.WEB.exe
@@ -178,7 +177,6 @@ C:\Users\Usuario\Source\Repos\face-expression\facial-expression.WEB\obj\Debug\ne
 C:\Users\Usuario\Source\Repos\face-expression\facial-expression.WEB\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\Usuario\Source\Repos\face-expression\facial-expression.WEB\obj\Debug\net6.0\scopedcss\bundle\facial-expression.WEB.styles.css
 C:\Users\Usuario\Source\Repos\face-expression\facial-expression.WEB\obj\Debug\net6.0\scopedcss\projectbundle\facial-expression.WEB.bundle.scp.css
-C:\Users\Usuario\Source\Repos\face-expression\facial-expression.WEB\obj\Debug\net6.0\facial-expression.WEB.csproj.CopyComplete
 C:\Users\Usuario\Source\Repos\face-expression\facial-expression.WEB\obj\Debug\net6.0\facial-expression.WEB.dll
 C:\Users\Usuario\Source\Repos\face-expression\facial-expression.WEB\obj\Debug\net6.0\refint\facial-expression.WEB.dll
 C:\Users\Usuario\Source\Repos\face-expression\facial-expression.WEB\obj\Debug\net6.0\facial-expression.WEB.pdb
@@ -579,3 +577,6 @@ C:\Users\User\source\repos\face-expression\facial-expression.WEB\obj\Debug\net6.
 C:\Users\User\source\repos\face-expression\facial-expression.WEB\obj\Debug\net6.0\facial-expression.WEB.pdb
 C:\Users\User\source\repos\face-expression\facial-expression.WEB\obj\Debug\net6.0\facial-expression.WEB.genruntimeconfig.cache
 C:\Users\User\source\repos\face-expression\facial-expression.WEB\obj\Debug\net6.0\ref\facial-expression.WEB.dll
+C:\Users\Usuario\Source\Repos\face-expression\facial-expression.WEB\bin\Debug\net6.0\example.appsettings.json
+C:\Users\Usuario\Source\Repos\face-expression\facial-expression.WEB\obj\Debug\net6.0\facial-expression.WEB.sourcelink.json
+C:\Users\Usuario\Source\Repos\face-expression\facial-expression.WEB\obj\Debug\net6.0\facial-e.CBBACCB6.Up2Date
